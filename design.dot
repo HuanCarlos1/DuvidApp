@@ -1,0 +1,37 @@
+digraph Design {
+
+    fb [label="Facebook\nGraph API", style="filled", color="lightgray"]
+
+    subgraph cluster_do {
+        label = "DigitalOcean"
+        server [label="Duvido Server"]
+        nodejs [label="NodeJS", style="filled", color="lightgray"]
+        mongo [label="MongoDB", style="filled", color="lightgray"]
+        nginx [label="NGINX", style="filled", color="lightgray"]
+    }
+
+    android [label="Android", style="filled", color="lightgray"]
+    ios [label="iOS", style="filled", color="lightgray"]
+    qt [label="Qt", style="filled", color="lightgray"]
+    qml [label="QML", style="filled", color="lightgray"]
+    ui [label="UI"]
+    app [label="Duvido"]
+
+    android -> qt
+    ios -> qt -> qml -> ui -> app
+
+    java2cpp [label="Android Abstration"]
+    objc2cpp [label="iOS Abstration"]
+    android -> java2cpp
+    ios -> objc2cpp
+
+    logic [label="Duvido Logic"]
+    java2cpp -> logic
+    objc2cpp -> logic -> ui
+    qt -> logic
+
+    mongo -> server
+    fb -> server
+    nginx -> server
+    nodejs -> server -> logic
+}

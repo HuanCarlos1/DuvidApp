@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+    </qresource>
+    <qresource prefix="/components">
+        <file>FacebookLoginButton.qml</file>
+        <file>FeedItem.qml</file>
+        <file>Avatar.qml</file>
+        <file>NavigationDrawerOption.qml</file>
+        <file>FullWidthFriendsInput.qml</file>
+        <file>EditableChallenge.qml</file>
+        <file>RemoveButton.qml</file>
+        <file>TimePicker.qml</file>
+        <file>OptionsButton.qml</file>
+        <file>ImageInput.qml</file>
+        <file>PhotoTaker.qml</file>
+        <file>RoundIconButton.qml</file>
+        <file>MyChallengeItem.qml</file>
+        <file>PlayingItem.qml</file>
+    </qresource>
+    <qresource prefix="/scenes">
+        <file>LoginScene.qml</file>
+        <file>MainScene.qml</file>
+    </qresource>
+    <qresource prefix="/frags">
+        <file>ChallengeCreator.qml</file>
+        <file>FriendsSelector.qml</file>
+        <file>NavigationDrawerContent.qml</file>
+        <file>Feed.qml</file>
+        <file>OptionsDialog.qml</file>
+        <file>ComplaintDialog.qml</file>
+        <file>ConfigPanel.qml</file>
+        <file>ConfigOption.qml</file>
+        <file>TimePickerDialog.qml</file>
+        <file>MyChallenges.qml</file>
+        <file>Terms.qml</file>
+        <file>SubmitDialog.qml</file>
+        <file>Playing.qml</file>
+        <file>JudgeDialog.qml</file>
+    </qresource>
+    <qresource prefix="/singletons">
+        <file>StackManager.qml</file>
+        <file>qmldir</file>
+        <file>MenuOptionsModel.qml</file>
+        <file>ConfigOptionsModel.qml</file>
+    </qresource>
+</RCC>
